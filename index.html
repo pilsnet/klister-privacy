@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klister — Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            line-height: 1.6;
+            color: #222;
+            background: #fff;
+        }
+        h1 { font-size: 1.6em; margin-bottom: 0.2em; }
+        h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+        h3 { font-size: 1em; margin-top: 1.2em; }
+        ul { padding-left: 1.4em; }
+        .subtitle { color: #666; font-size: 0.95em; margin-bottom: 2em; }
+        a { color: #0071e3; }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a1a; color: #e0e0e0; }
+            h2 { border-bottom-color: #333; }
+            .subtitle { color: #999; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle"><strong>Klister — Cross-Country Ski Tracker</strong><br>Last updated: March 1, 2026</p>
+
+    <p>Carey Pillar ("we", "us") built Klister as a cross-country ski tracking app. This policy describes what data the app collects and how it is used.</p>
+
+    <h2>Data Collection</h2>
+
+    <h3>Location Data</h3>
+    <p>Klister uses your device's GPS to track ski sessions and map routes. Location data (latitude, longitude, altitude, speed) is collected only while you are actively recording a session. You can deny or revoke location access at any time in Settings.</p>
+
+    <h3>Health &amp; Fitness Data</h3>
+    <p>With your permission, Klister reads and writes data to Apple HealthKit, including:</p>
+    <ul>
+        <li>Workouts</li>
+        <li>Heart rate</li>
+        <li>Distance (cross-country skiing)</li>
+        <li>Active energy (calories)</li>
+    </ul>
+    <p>HealthKit data is used solely to display session metrics and sync workouts to Apple Health. Health data is never shared with third parties.</p>
+
+    <h3>Weather Data</h3>
+    <p>Klister uses Apple WeatherKit to display current conditions during sessions. Your approximate location is sent to Apple's weather service for this purpose. No personal information is included in weather requests.</p>
+
+    <h3>User-Entered Data</h3>
+    <p>You may optionally enter snow conditions, wax logs, gear inventory, session notes, route names, and training goals.</p>
+
+    <h2>Data Storage</h2>
+    <p>All session data is stored on your device using Apple's SwiftData framework. If you are signed into iCloud, data syncs to your private iCloud container via CloudKit. Data is stored in cleartext within iCloud (CloudKit does not support field-level encryption). Your iCloud data is protected by your Apple ID and Apple's iCloud security infrastructure.</p>
+    <p>App preferences (units, default technique, etc.) are stored locally in UserDefaults and are not synced to iCloud.</p>
+    <p>If you use the Apple Watch companion app, session data is transferred between your Watch and iPhone using Apple's WatchConnectivity framework (direct device-to-device, no external server).</p>
+
+    <h2>Third-Party Services</h2>
+    <p>Klister does not use any third-party analytics, advertising, or tracking SDKs. The only services used are:</p>
+    <ul>
+        <li><strong>Apple HealthKit</strong> — with your explicit permission</li>
+        <li><strong>Apple WeatherKit</strong> — for weather conditions</li>
+        <li><strong>Apple CloudKit</strong> — for iCloud sync (your private container only)</li>
+        <li><strong>Apple StoreKit</strong> — for subscription purchases</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>Klister does not sell, rent, or share your personal data with anyone. You may choose to export session data as GPX or CSV files via the share sheet. Exported files contain your GPS track, health metrics, and session details. You control who receives exported files.</p>
+
+    <h2>Purchases</h2>
+    <p>Subscription purchases are processed entirely by Apple through the App Store. Klister does not collect or store payment information.</p>
+
+    <h2>Data Deletion</h2>
+    <p>You can delete individual sessions within the app. To delete all data, uninstall the app and remove Klister data from iCloud via Settings &gt; Apple ID &gt; iCloud &gt; Manage Storage.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Klister does not knowingly collect data from children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy changes, the updated version will be posted here with a new "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Reach out at <a href="mailto:careypillar@gmail.com">careypillar@gmail.com</a></p>
+</body>
+</html>
