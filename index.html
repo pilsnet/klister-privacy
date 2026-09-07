@@ -29,7 +29,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="subtitle"><strong>Klister — Cross-Country Ski Tracker</strong><br>Last updated: March 1, 2026</p>
+    <p class="subtitle"><strong>Klister — Cross-Country Ski Tracker</strong><br>Last updated: September 7, 2026</p>
 
     <p>Carey Pillar ("we", "us") built Klister as a cross-country ski tracking app. This policy describes what data the app collects and how it is used.</p>
 
@@ -45,18 +45,25 @@
         <li>Heart rate</li>
         <li>Distance (cross-country skiing)</li>
         <li>Active energy (calories)</li>
+        <li>Past cross-country ski workouts recorded by other apps or devices — only when you choose <em>Import from Apple Health</em>; Klister then keeps its own copy of those workouts (dates, distance, route, heart rate) as sessions</li>
     </ul>
     <p>HealthKit data is used solely to display session metrics and sync workouts to Apple Health. Health data is never shared with third parties.</p>
 
     <h3>Weather Data</h3>
-    <p>Klister uses Apple WeatherKit to display current conditions during sessions. Your approximate location is sent to Apple's weather service for this purpose. No personal information is included in weather requests.</p>
+    <p>Klister uses Apple WeatherKit to record the conditions for each session and, if you turn on the <em>Wax Morning Brief</em>, to fetch the forecast for your home trail the evening before a ski day. Your approximate location is sent to Apple's weather service for this purpose. No personal information is included in weather requests.</p>
+
+    <h3>Photos &amp; Camera</h3>
+    <p>You can attach one photo to a session from your photo library or the camera. The camera is used only when you tap <em>Take Photo</em>; Klister never reads your photo library beyond the picture you pick. Session photos are stored only on the device they were added on, inside Klister's own storage — they are never uploaded anywhere and are not synced through iCloud. A photo is deleted when you remove it or delete its session.</p>
+
+    <h3>Notifications</h3>
+    <p>Inactivity reminders, journey waypoint alerts and the Wax Morning Brief are local notifications scheduled on your device. Klister has no push-notification server. You can turn them off in the app or in iOS Settings.</p>
 
     <h3>User-Entered Data</h3>
-    <p>You may optionally enter snow conditions, wax logs, gear inventory, session notes, route names, and training goals.</p>
+    <p>You may optionally enter snow conditions, snow temperature, wax logs, your wax box, gear inventory, session notes, route names, trail names, and training goals.</p>
 
     <h2>Data Storage</h2>
     <p>All session data is stored on your device using Apple's SwiftData framework. If you are signed into iCloud, data syncs to your private iCloud container via CloudKit. Data is stored in cleartext within iCloud (CloudKit does not support field-level encryption). Your iCloud data is protected by your Apple ID and Apple's iCloud security infrastructure.</p>
-    <p>App preferences (units, default technique, etc.) are stored locally in UserDefaults and are not synced to iCloud.</p>
+    <p>App preferences (units, default technique, etc.) are stored locally in UserDefaults and are not synced to iCloud. Session photos are stored locally only (see above). The town data used for Journey goals is a bundled offline index (GeoNames, CC BY 4.0); route directions and place names for journeys come from Apple Maps.</p>
     <p>If you use the Apple Watch companion app, session data is transferred between your Watch and iPhone using Apple's WatchConnectivity framework (direct device-to-device, no external server).</p>
 
     <h2>Third-Party Services</h2>
@@ -65,17 +72,17 @@
         <li><strong>Apple HealthKit</strong> — with your explicit permission</li>
         <li><strong>Apple WeatherKit</strong> — for weather conditions</li>
         <li><strong>Apple CloudKit</strong> — for iCloud sync (your private container only)</li>
-        <li><strong>Apple StoreKit</strong> — for in-app purchases
+        <li><strong>Apple MapKit</strong> — route directions and place names for Journey goals</li>
     </ul>
 
     <h2>Data Sharing</h2>
     <p>Klister does not sell, rent, or share your personal data with anyone. You may choose to export session data as GPX or CSV files via the share sheet. Exported files contain your GPS track, health metrics, and session details. You control who receives exported files.</p>
 
     <h2>Purchases</h2>
-    <p>The optional Pro upgrade is a one-time purchase processed entirely by Apple through the App Store. Klister does not collect or store payment information.</p>
+    <p>Klister is completely free. No in-app purchases, no subscriptions, no ads.</p>
 
     <h2>Data Deletion</h2>
-    <p>You can delete individual sessions within the app. To delete all data, uninstall the app and remove Klister data from iCloud via Settings &gt; Apple ID &gt; iCloud &gt; Manage Storage.</p>
+    <p>You can delete individual sessions within the app (deleting a session also deletes its photo); gear, wax box items, trails and goals can be deleted in the app too. To delete all data, uninstall the app and remove Klister data from iCloud via Settings &gt; Apple ID &gt; iCloud &gt; Manage Storage.</p>
 
     <h2>Children's Privacy</h2>
     <p>Klister does not knowingly collect data from children under 13.</p>
